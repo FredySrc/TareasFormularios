@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alibaba.com</h1>
+      <select name="languaje" id="lenguaje-select">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </header>
+
+    <div class="wraper-content">
+      <form action="#">
+        <div class="wraper-input">
+          <label for="country" class="required">Pais/Region:</label>
+          <select name="country" id="country-select">
+            <option value="honduras">Honduras</option>
+            <option value="costa rica">Costa Rica</option>
+          </select>
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">seleccione el rol comercial:</p>
+          <label for="buyer">Comprador</label>
+          <input type="radio" name="trade" id="buyer" required />
+          <label for="seller">Vendedor</label>
+          <input type="radio" name="trade" id="seller" required />
+          <label for="both">Ambos</label>
+          <input type="radio" name="trade" id="both" required />
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">Correo electronico</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Por favor ingrese un correo como usuario"
+          />
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">Contraseña</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Por favor ingrese una contraseña"
+          />
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">Confirmar contraseña</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Por favor vuelva a confirmar la contraseña"
+          />
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">Nombre</p>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Por favor ingrese su nombre"
+          />
+        </div>
+
+        <div class="wraper-input-mobil">
+          <p class="required title">Numero Movil</p>
+
+          <div class="content-mobil">
+            <select name="code" id="code-region">
+              <option value="en">Honduras +504</option>
+              <option value="es">Costa Rica +506</option>
+            </select>
+            <input type="number" name="mobile" id="mobile" required />
+          </div>
+        </div>
+
+        <div class="wraper-input">
+          <p class="required">Verificar</p>
+          <input type="button" value="Verificar" required />
+        </div>
+
+        <div class="wraper-input">
+          <div></div>
+          <span>
+            <input type="checkbox" />
+            Al crear una cuenta en el sitio web: acepto cumplir con el Acuerdo
+            de Membresía de Alibaba.com: estoy dispuesto a recibir correos
+            electrónicos de los miembros y servicios de Alibaba.com
+          </span>
+        </div>
+
+        <button>Aceptar y Registrar</button>
+      </form>
+    </div>
+  </body>
+</html>

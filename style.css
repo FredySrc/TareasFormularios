@@ -1,0 +1,140 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 40px;
+}
+
+h1 {
+  color: #ff6500;
+}
+
+.wraper-content {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10px 385px 0 0;
+  gap: 10px;
+}
+
+select[name='languaje'] {
+  width: 98px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #c4c6cf;
+}
+
+input,
+select[name='country'],
+option {
+  width: 274px;
+  height: 38px;
+  border: 1px solid #c4c6cf;
+}
+
+input,
+select,
+label,
+p {
+  color: gray;
+}
+
+input:focus,
+select[name='country']:focus {
+  outline: 1px solid #ff6500;
+  border: none;
+}
+
+.wraper-input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.wraper-input-mobil {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.title {
+  flex: 1;
+  text-align: end;
+}
+
+.content-mobil {
+  flex: 2.5;
+}
+
+select[name='code'] {
+  width: 52%;
+  height: 38px;
+}
+
+input[name='mobile'] {
+  width: 44%;
+}
+
+.required:before {
+  content: '*';
+  color: #ff0000;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #8a8988;
+  outline: none;
+}
+
+input[type='radio']:checked {
+  border: 1px solid #ff6500;
+}
+
+input[type='radio']:before {
+  content: '';
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+  background: #ff6500;
+}
+
+button {
+  width: 200px;
+  height: 38px;
+  padding: 10px 20px;
+  background-color: #ff6000;
+  color: #fff;
+  border: 1px solid #ff6500;
+  margin-top: 10px;
+}
+
+span {
+  width: 40%;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ff6500;
+  color: #fff;
+  border: 1px solid #ff6500;
+  outline: none;
+}
